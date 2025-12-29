@@ -3,17 +3,11 @@ import time
 import json
 from datetime import datetime
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+TWITTER_BEARER_TOKEN = os.getenv("TWITTER_BEARER_TOKEN")
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-
-# ============= CONFIGURATION =============
-# Fill these in with your actual tokens
-TELEGRAM_BOT_TOKEN = "8558259876:AAEpbIfsrC8xB4TrHeJeNlNQdb6xNSd_eyE"  # Get from @BotFather
-TELEGRAM_CHAT_ID = "7338254131"  # Get from @userinfobot
-TWITTER_BEARER_TOKEN = "AAAAAAAAAAAAAAAAAAAAAGJA6gEAAAAA12nOBlMhgKbb73Yoj15b3VBMV4w%3D3YwsqvgLULvKMo5IiTirhhbexO7PnTU8DM1XxMZqrd6XhavM7S"  # Get from developer.twitter.com
 
 # Follower range
 MIN_FOLLOWERS = 30
