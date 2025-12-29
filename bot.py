@@ -2,6 +2,12 @@ import requests
 import time
 import json
 from datetime import datetime
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # ============= CONFIGURATION =============
 # Fill these in with your actual tokens
